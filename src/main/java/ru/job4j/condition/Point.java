@@ -10,6 +10,6 @@ public class Point {
             double result1 = Point.distance(0, 0, 2, 0);
             double result2 = Point.distance(0, 0, 4, 0);
             System.out.println("result1 (0, 0) to (2, 0) " + result1);
-            System.out.println("result2 (0, 0) to (2, 0) " + result2);
+            System.out.println("result2 (0, 0) to (4, 0) " + result2);
         }
     }
