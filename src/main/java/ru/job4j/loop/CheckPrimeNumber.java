@@ -6,7 +6,7 @@ public class CheckPrimeNumber {
             if (number % i == 0) {
                 return false;
             }
-            }
+        }
             return number > 1;
     }
 }
