@@ -10,12 +10,4 @@ public class Turn {
         }
         return array;
     }
-
-    public static void main(String[] args) {
-        int[] nums = new int[]{2, 3, 4, 5};
-        int[] rsl = back(nums);
-        for (int index = 0; index < rsl.length; index++) {
-            System.out.println(rsl[index]);
-        }
-    }
 }
