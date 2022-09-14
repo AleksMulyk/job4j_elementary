@@ -2,18 +2,6 @@ package ru.job4j.array;
 
 import java.util.Arrays;
 
-        /*while (change != 0) {
-            for (int i = 0; i < coins.length; i++) {
-                if (change >= coins[i]) {
-                    rsl[size] = coins[i];
-                    change = change - coins[i];
-                    size = size + 1;
-                    break;
-                }
-            }
-
-        }*/
-
 public class Machine {
 
     public static int[] change(int money, int price) {
