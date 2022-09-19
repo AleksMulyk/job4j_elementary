@@ -19,7 +19,7 @@ public class JavaNameValidator {
     }
 
     public static boolean isSpecialSymbol(int code) {
-        return (code == 36 || code == 95);
+        return code == 36 || code == 95;
     }
 
     public static boolean isUpperLatinLetter(int code) {
