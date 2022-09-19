@@ -1,6 +1,7 @@
 package ru.job4j.array;
 
 public class JavaNameValidator {
+
     public static boolean isNameValid(String name) {
         boolean rsl = true;
         if (name.isEmpty() || (name.codePointAt(0) < 97 || name.codePointAt(0) > 122)) {
