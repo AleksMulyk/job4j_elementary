@@ -5,7 +5,8 @@ public class JavaNameValidator {
     public static boolean isNameValid(String name) {
         boolean rsl = !(name.isEmpty() || name.codePointAt(0) < 97
                 || name.codePointAt(0) > 122);
-        if (rsl == true) {
+        if (!(name.isEmpty() || name.codePointAt(0) < 97
+                || name.codePointAt(0) > 122)) {
             for (int i = 1; i < name.length(); i++) {
                 if (!(isSpecialSymbol(name.codePointAt(i)) || isLowerLatinLetter(name.codePointAt(i))
                         || isUpperLatinLetter(name.codePointAt(i)) || Character.isDigit(name.charAt(i)))) {
