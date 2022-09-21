@@ -3,12 +3,11 @@ package ru.job4j.array;
 public class JavaNameValidator {
 
     public static boolean isNameValid(String name) {
-        boolean rsl = true;
-        if (name.isEmpty() || (name.codePointAt(0) < 97 || name.codePointAt(0) > 122)) {
-            rsl = false;
-        } else {
+        boolean rsl = !(name.isEmpty() || name.codePointAt(0) < 97
+                || name.codePointAt(0) > 122);
+        if (rsl == true) {
             for (int i = 1; i < name.length(); i++) {
-                if (rsl != (isSpecialSymbol(name.codePointAt(i)) || isLowerLatinLetter(name.codePointAt(i))
+                if (!(isSpecialSymbol(name.codePointAt(i)) || isLowerLatinLetter(name.codePointAt(i))
                         || isUpperLatinLetter(name.codePointAt(i)) || Character.isDigit(name.charAt(i)))) {
                     rsl = false;
                     break;
