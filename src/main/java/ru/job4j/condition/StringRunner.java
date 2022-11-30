@@ -8,6 +8,7 @@ package ru.job4j.condition;
         System.out.println(idea); */
 
 public class StringRunner {
+
     public static void main(String[] args) {
 
         String idea = "I like Java!";
