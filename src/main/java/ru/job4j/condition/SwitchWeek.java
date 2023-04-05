@@ -1,7 +1,6 @@
 package ru.job4j.condition;
 
 public class SwitchWeek {
-
     public static String nameofDay(int day) {
         String name;
         switch (day) {
