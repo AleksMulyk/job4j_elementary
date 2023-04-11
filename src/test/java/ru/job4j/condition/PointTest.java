@@ -35,4 +35,12 @@ public class PointTest {
         double expected = 6;
         assertThat(a.distance(b)).isEqualTo(expected);
     }
+
+    @Test
+    public void when10197to378then84() {
+        Point a = new Point(10, 19, 7);
+        Point b = new Point(3, 7, 8);
+        double expected = 84;
+        assertThat(a.distance3d(b)).isEqualTo(expected);
+    }
 }
