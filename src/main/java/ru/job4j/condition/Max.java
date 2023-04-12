@@ -9,8 +9,12 @@ public class Max {
         return max(max(first, second), third);
     }
 
+    public static int max(int first, int second, int third, int fourth) {
+        return max(max(first, second, third), fourth);
+    }
+
     public static void main(String[] args) {
-        int rsl = Max.max(200, 6, 250);
+        int rsl = Max.max(200, 6, 250, 450);
         System.out.println(rsl);
     }
 }
