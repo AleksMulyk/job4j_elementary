@@ -2,6 +2,7 @@ package ru.job4j.condition;
 
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.offset;
 
 public class PointTest {
     @Test
@@ -40,7 +41,8 @@ public class PointTest {
     public void when10197to378then84() {
         Point a = new Point(10, 19, 7);
         Point b = new Point(3, 7, 8);
-        double expected = 84;
-        assertThat(a.distance3d(b)).isEqualTo(expected);
+        double rsl = a.distance(b);
+        double expected = 13.9;
+        assertThat(rsl).isCloseTo(expected, offset(0.01));
     }
 }
